@@ -1,0 +1,64 @@
+<html>
+    <head>
+        <title>ColorSteps</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="assets/css/Loader.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <script src="assets/js/vue.js"></script>
+        <script src="assets/js/VueMixin.js"></script>
+    </head>
+
+    <body>
+
+
+        <div class="content">
+            <header>
+                <div class="option" id="close">✖</div>
+                <div class="option option2" id="minimize">⚊</div>
+            </header>
+
+            <!--
+            <div class="loader">
+                <div class="loader-dot"></div>
+                <div class="loader-dot"></div>
+                <div class="loader-dot"></div>
+                <div class="loader-dot"></div>
+                <div class="loader-dot"></div>
+                <div class="loader-dot"></div>
+                <div class="loader-text"></div>
+            </div>
+            -->
+
+            <div class="container">
+                <main>
+                    <div class="tools">
+                        <div>
+                            <input type="color" alt="icon-color" v-model="color1">
+                            <input type="text" v-model="color1">
+                        </div>
+                        <div>
+                            <div class="vertical-range"><input type="range" :min="min" :max="max" v-model="steps"></div>
+                            <div class="steps">{{visualSteps}} {{visualStepsLabel}}</div>
+                        </div>
+                        <div>
+                            <input type="color" alt="icon-color" v-model="color2">
+                            <input type="text" v-model="color2">
+                        </div>
+                    </div>
+                    <!-- FIN DIV TOOLS -->
+
+
+                    <div class="colors">
+                        <div class="color" v-for="color in colors" :style="setStyles(color)">&nbsp;{{colorName(color)}}</div>
+                    </div>
+
+                </main>
+
+                <!-- FIN MAIN CONTAINER -->
+            </div>
+
+        </div>
+        <script src="assets/js/script.js"></script>
+    </body>
+
+</html>

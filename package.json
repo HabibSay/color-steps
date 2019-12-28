@@ -1,0 +1,32 @@
+{
+  "name": "color_steps",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Indicate differents color steps from color 1 to color 2",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "keywords": [
+    "color",
+    "couleur",
+    "steps",
+    "step",
+    "etapes",
+    "étapes",
+    "range",
+    "nuances",
+    "nuance",
+    "color steps",
+    "etape de couleur",
+    "nuances de couleur"
+  ],
+  "author": "Sayegh Habib",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^6.0.10"
+  },
+  "dependencies": {
+    "custom-electron-titlebar": "^3.1.0"
+  }
+}
