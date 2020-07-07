@@ -24,7 +24,7 @@
   "author": "Sayegh Habib",
   "license": "MIT",
   "devDependencies": {
-    "electron": "^6.0.10"
+    "electron": "^7.2.4"
   },
   "dependencies": {
     "custom-electron-titlebar": "^3.1.0"
